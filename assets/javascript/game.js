@@ -1,4 +1,3 @@
-// Variables
 var winCount = 0;
 var lossCount = 0;
 var guessesRemaining = 15;
@@ -9,22 +8,18 @@ var lettersGuessed = [];
 
 // Functions
 
-// increase user win
 function increaseWinCount() {
     winCount = winCount + 1;
 }
 
-// increase user loss
 function increaseLossCount() {
     lossCount = lossCount - 1;
 }
 
-// decrement guesses remaining
 function decrementGuessesRemaining() {
     guessesRemaining--;
 }
 
-// test if the user won
 function didUserWin() {
     var underscoreString = underscoreWord.join('');
     if (underscoreString === hangmanWord) {
@@ -34,7 +29,6 @@ function didUserWin() {
     }
 }
 
-// test if the user lost
 function didUserLose() {
     if (guessesRemaining === 0) {
         return true;
@@ -43,13 +37,12 @@ function didUserLose() {
     }
 }
 
-//choose hangmanword from the wordbank
 function chooseHangmanWord() {
     var index = Math.floor(Math.random() * wordBank.length);
     hangmanWord = wordBank[index];
 }
 
-// replace underscore with correct letter
+
 function replaceUnderscore(userGuess) {
     
     for (var i = 0; i < hangmanWord.length; i++) {
@@ -59,7 +52,7 @@ function replaceUnderscore(userGuess) {
     }
 }
 
-// test if guess was a match
+
 function isUserGuessCorrect(userGuess) {
     if (hangmanWord.indexOf(userGuess) !== -1) {
         return true;
