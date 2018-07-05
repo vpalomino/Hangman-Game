@@ -1,0 +1,31 @@
+body {
+  background-image: url('../assets/images/background.png'); 
+  background-size: cover;
+  background: rgb(69, 218, 238);
+}
+img{
+  display: center;
+  height: 70%;
+  width: 70%;
+}
+h1 {
+color: rgb(37, 70, 59);
+font-style: italic; 
+text-align: center;
+padding: 100px;
+margin: 80px 200px 80px 200px;
+background-color: #e8ff1d; 
+border-radius: 200px;
+  border: 2px solid #115353;  
+}
+
+p { 
+font-style: bold;
+color: #2F4F4F;
+text-align: center;
+
+}
+
+#js-word {
+letter-spacing: 10px;
+}
